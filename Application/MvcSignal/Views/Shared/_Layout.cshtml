@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - Chat by SignalR</title>
+       
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        <style>
+            body {
+                -o-background-size: cover;
+                background: url('../Content/Images/EnterNameBackground.jpg') no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                background-size: cover;
+                font-family: 'Josefin Sans', serif;
+                font-family: 'Josefin Sans', serif;
+            }
+
+            th {
+                background: rgb(112, 121, 108);
+                border-bottom: 1px solid #bebebd;
+                -moz-border-radius: 4px 4px 0 0;
+                font-size: 16px;
+                -moz-box-shadow: 0px 0px 2px #C9C8C8;
+                box-shadow: 0px 0px 2px #C9C8C8;
+                color: black;
+            }
+
+
+
+            td {
+                width: 50%;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            #containDIv {
+                border-radius: 12px;
+                padding: 12px;
+                border-style: double;
+                border-color: rgba(191, 175, 175, 0.45);
+                width: 97%;
+                margin-top: 14px;
+            }
+
+            .left-col {
+                text-align: left;
+                font-weight: 600;
+            }
+
+            .right-col {
+                text-align: right;
+            }
+
+            .player {
+                background: url('../Content/Images/blackNode.jpg') no-repeat;
+                background-size: 100% 100%;
+            }
+
+            .playingPlayer {
+                border-style: solid;
+                border-color: red;
+            }
+
+            .centerText {
+                text-align: center;
+                color: white;
+                font-weight: bold;
+                padding-top: 2%;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="body">
+           
+            <section >
+                @RenderBody()
+            </section>
+        </div>
+       
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
