@@ -133,7 +133,7 @@
         };
 
         var token = generateToken();
-
+        var name;
         function printListOfPlayers(list) {
             $('#playersDiv div').empty();
             if (list != null && list.length > 0) {
@@ -174,14 +174,21 @@
             //  alert('yaho');
             printListOfPlayers(players);
         };
-
+        chat.client.duplicateName = function (serverName,serverToken) {
+           
+            if (serverName == name && serverToken == token) {
+                toastr.error("Duplicate names!");
+                document.getElementById("sendmessage").disabled = false;
+                document.getElementById("sendmessage").innerHTML = "Submit";
+            }
+        };
 
         // Start the connection.
         $.connection.hub.start().done(function () {
 
             $('#sendmessage').click(function () {
-
-                chat.server.send($('#UserName').val(), token);
+                name = $('#UserName').val();
+              var response =  chat.server.send(name, token);
                 document.getElementById("sendmessage").disabled = true;
                 document.getElementById("sendmessage").innerHTML = "Wait!";
                 // alert(token);

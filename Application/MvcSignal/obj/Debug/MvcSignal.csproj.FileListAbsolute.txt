@@ -200,6 +200,5 @@ D:\Play-Around-\Application\MvcSignal\bin\ko\System.Spatial.resources.dll
 D:\Play-Around-\Application\MvcSignal\bin\ru\System.Spatial.resources.dll
 D:\Play-Around-\Application\MvcSignal\bin\zh-Hans\System.Spatial.resources.dll
 D:\Play-Around-\Application\MvcSignal\bin\zh-Hant\System.Spatial.resources.dll
-D:\Play-Around-\Application\MvcSignal\obj\Debug\MvcSignal.csprojResolveAssemblyReference.cache
 D:\Play-Around-\Application\MvcSignal\obj\Debug\MvcSignal.dll
 D:\Play-Around-\Application\MvcSignal\obj\Debug\MvcSignal.pdb
